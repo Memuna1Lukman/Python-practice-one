@@ -25,12 +25,12 @@ for itm in cart:
         
         else:
             carts[itm] = 1    
-        print(f"{itm} : {carts}")
+
         
         
     else:
         print(f"{itm} does not exist in our store")
-
+print(f"{carts}")
 print(f"The number of items are {counts}")
 print(f"The subtotal is {subtotal}")
 
@@ -44,5 +44,5 @@ elif subtotal>100 and subtotal<=200:
 else:
     print("There is no discount")
     discount= 0
-
-print(f"The total is {discount}")
+total=subtotal-discount
+print(f"The total is {total}")
